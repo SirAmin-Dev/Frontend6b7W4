@@ -1,0 +1,40 @@
+html{
+    font-size: 20px;
+}
+
+main{
+    width: 75%;
+    margin: auto;
+}
+
+section{
+    min-height: 40vh;
+}
+
+p{
+    font-size: 1.5rem;
+    overflow: auto;
+    line-height: 2.0;
+    height: 150px;
+}
+
+section:nth-of-type(even){
+  border-top: 10px dashed green;
+  border-bottom: 10px dashed black;
+  border-width: 40px;
+}
+
+section:nth-of-type(odd){
+    border-right: 10px ridge yellow;
+    border-left: 10px ridge red;
+    border-width: 40px;
+}
+
+h2{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-bottom: 8px;
+    border-bottom: solid purple;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+         *{
+            margin: 0;
+            padding: 0;
+            font-weight: lighter;
+        }
+        section{
+          background-color: chartreuse;
+          overflow: auto;
+        }
+
+        main{
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-template-rows: repeat(4, 200px);
+          gap: 20px 0px;
+          position: relative;
+          z-index: -1;
+          top: 150px;
+        }
+        
+        section:nth-of-type(1){
+          grid-area: 1/1/3/4;
+        }
+        section:nth-of-type(2){
+          grid-area: 1/4/2/5;
+        }
+        section:nth-of-type(3){
+          grid-area: 2/4/3/5;
+        }
+        section:nth-of-type(4){
+          grid-area: 3/1/4/3;
+        }
+        section:nth-of-type(5){
+          grid-area: 3/3/4/5;
+        }
+        section:nth-of-type(6){
+          grid-area: 4/1/5/5;
+        }
+        main a{
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover{
+            text-decoration: overline;
+        }
+        
+        nav a{
+            text-decoration: none;
+            color: #fff;
+        }
+        nav{
+            position: fixed;
+            /* right: 0;
+            left: 0; */
+            inset-inline: 0;
+            z-index: 1;
+        }
+
+        nav ul{
+            background-color: slategrey;
+            height: 150px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* padding: 20px 0px; */
+            align-items: center;
+            column-gap: 20px;  
+        }  
+
+        nav li:nth-of-type(4n+1){
+            align-self: flex-start;
+        }
+        nav li:nth-of-type(2n+4){
+            align-self: flex-end;
+        }
+
+        li{
+            background-color: black;
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+      </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">link 1</a></li>
+            <li><a href="">link 2</a></li>
+            <li><a href="">link 3</a></li>
+            <li><a href="">link 4</a></li>
+            <li><a href="">link 5</a></li>
+            <li><a href="">link 6</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2><a href="#">Model 1</a></h2>
+            <p>Lorem ipsum dolor sit amet <a href="#">consectetur adipisicing elit</a>. Incidunt excepturi ad veniam, delectus pariatur commodi ut magni numquam exercitationem! Maiores hic possimus eveniet numquam debitis ad quis perspiciatis, laborum quia.</p>
+        </section>
+        <section>
+            <h2>Model 2</h2>
+            <p>Molestiae voluptatum temporibus deserunt vero aut inventore adipisci sit quaerat illo, at excepturi quae facilis suscipit minima recusandae fugit dignissimos quidem? Deserunt quam aspernatur ullam totam voluptates mollitia cum impedit!</p>
+        </section>
+        <section>
+            <h2>Model 3</h2>
+            <p>Neque fugiat laboriosam architecto? Atque voluptate, porro ullam ea quae error quidem quo soluta, aperiam accusamus iure optio nostrum libero. Officia aperiam aliquam dolores quis dolorem quasi error. Nobis, dolorum.</p>
+        </section>
+        <section>
+            <h2>Model 4</h2>
+            <p>Quod nesciunt eius sit nobis dolores quis eum qui, rerum, possimus sed corporis consequuntur perspiciatis. Labore magni eius odit, distinctio cumque ullam officia praesentium placeat. Hic expedita mollitia beatae architecto.</p>
+        </section>
+        <section>
+            <h2>Model 5</h2>
+            <p>Commodi dolore hic debitis distinctio in blanditiis, vero numquam nobis. Saepe voluptates perspiciatis nam hic vero aut nobis eos fugiat a sunt quam ullam similique dolor natus, asperiores quia quisquam.</p>
+        </section>
+        <section>
+            <h2>Model 6</h2>
+            <p>Nesciunt eaque ipsum maiores totam maxime ratione veritatis praesentium error accusamus vel soluta provident, perspiciatis, dolorum voluptas quaerat facere? Provident mollitia dolores earum eaque aut excepturi aspernatur sunt. Tenetur, ducimus.</p>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 3</title>
+    <style> 
+      section{
+        background-color: slateblue;
+        overflow: auto;
+      }
+
+      main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 150px);
+        grid-template-areas: 
+        "a a a a"
+        "a a a a"
+        "b c d d"
+        "e f d d";
+        gap: 10px 30px;
+      }
+      
+      section:nth-of-type(1){
+        grid-area: a;
+      }
+      section:nth-of-type(2){
+        grid-area: b;
+      }
+      section:nth-of-type(3){
+        grid-area: c;
+      }
+      section:nth-of-type(4){
+        grid-area: d;
+      }
+      section:nth-of-type(5){
+        grid-area: e;
+      }
+      section:nth-of-type(6){
+        grid-area: f;
+      }
+      
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Project 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt excepturi ad veniam, delectus pariatur commodi ut magni numquam exercitationem! Maiores hic possimus eveniet numquam debitis ad quis perspiciatis, laborum quia.</p>
+        </section>
+        <section>
+            <h2>Project 2</h2>
+            <p>Molestiae voluptatum temporibus deserunt vero aut inventore adipisci sit quaerat illo, at excepturi quae facilis suscipit minima recusandae fugit dignissimos quidem? Deserunt quam aspernatur ullam totam voluptates mollitia cum impedit!</p>
+        </section>
+        <section>
+            <h2>Project 3</h2>
+            <p>Neque fugiat laboriosam architecto? Atque voluptate, porro ullam ea quae error quidem quo soluta, aperiam accusamus iure optio nostrum libero. Officia aperiam aliquam dolores quis dolorem quasi error. Nobis, dolorum.</p>
+        </section>
+        <section>
+            <h2>Project 4</h2>
+            <p>Quod nesciunt eius sit nobis dolores quis eum qui, rerum, possimus sed corporis consequuntur perspiciatis. Labore magni eius odit, distinctio cumque ullam officia praesentium placeat. Hic expedita mollitia beatae architecto.</p>
+        </section>
+        <section>
+            <h2>Project 5</h2>
+            <p>Commodi dolore hic debitis distinctio in blanditiis, vero numquam nobis. Saepe voluptates perspiciatis nam hic vero aut nobis eos fugiat a sunt quam ullam similique dolor natus, asperiores quia quisquam.</p>
+        </section>
+        <section>
+            <h2>Project6</h2>
+            <p>Nesciunt eaque ipsum maiores totam maxime ratione veritatis praesentium error accusamus vel soluta provident, perspiciatis, dolorum voluptas quaerat facere? Provident mollitia dolores earum eaque aut excepturi aspernatur sunt. Tenetur, ducimus.</p>
+        </section>
+    </main>
+</body>
+</html>
